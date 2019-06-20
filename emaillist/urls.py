@@ -19,7 +19,7 @@ import emaillist.views as emaillist_views
 
 urlpatterns = [
     path('', emaillist_views.index),
-    path('form', emaillist_views.form),
-    path('add', emaillist_views.add)
+    path('form/', emaillist_views.form),
+    path('add/', emaillist_views.add)
 
 ]

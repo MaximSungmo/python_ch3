@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -11,5 +12,12 @@ def hello(request):
 
 def test_1(request):
     return render(request, 'helloworld/test_1.html')
+
+# pathvariable을 받을 때는 파라미터로 넣어주기
+def hello2(request, id=0):
+    return HttpResponse(f'id:{id}')
+
+
+
 
 

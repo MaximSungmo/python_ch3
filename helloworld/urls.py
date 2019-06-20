@@ -20,5 +20,7 @@ import helloworld.views as helloworld_views
 urlpatterns = [
     path('', helloworld_views.index, name='index'),
     path('test_1/', helloworld_views.test_1),
-    path('helloworld/', helloworld_views.hello)
+    path('hello/', helloworld_views.hello),
+    path('hello2/<int:id>/', helloworld_views.hello2)
+
 ]
