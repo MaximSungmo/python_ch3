@@ -21,6 +21,7 @@ urlpatterns = [
     path('', helloworld_views.index, name='index'),
     path('test_1/', helloworld_views.test_1),
     path('hello/', helloworld_views.hello),
-    path('hello2/<int:id>/', helloworld_views.hello2)
+    path('hello2/<int:id>/', helloworld_views.hello2),
+    path('hello3/', helloworld_views.hello3)
 
 ]
