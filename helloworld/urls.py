@@ -22,6 +22,9 @@ urlpatterns = [
     path('test_1/', helloworld_views.test_1),
     path('hello/', helloworld_views.hello),
     path('hello2/<int:id>/', helloworld_views.hello2),
-    path('hello3/', helloworld_views.hello3)
+    path('hello3/', helloworld_views.hello3),
+    path('counter/max', helloworld_views.counter_max),
+    path('counter/add', helloworld_views.counter_add),
+    path('counter/update', helloworld_views.counter_update),
 
 ]
